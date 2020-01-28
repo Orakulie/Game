@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Game</title>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      UnityLoader.instantiate("unityContainer", "Build/Run_HTML.json");
-    </script>
-  </head>
-  <body>
-    <div id="unityContainer" style="width: 960px; height: 600px; margin: auto"></div>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Game</title>
+  <script src="Build/UnityLoader.js"></script>
+  <script>
+    UnityLoader.instantiate("unityContainer", "Build/Run_HTML.json");
+  </script>
+  <style>
+    .c {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+  </style>
+
+
+
+</head>
+
+<body>
+  <div class="c">
+    <div id="unityContainer" style="width: 960px; height: 600px; margin: auto;"></div>
+  </div>
+</body>
+
 </html>
